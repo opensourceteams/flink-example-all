@@ -6,7 +6,7 @@
 - flink 流按时间间隔100毫秒统计单词
 
 ## 源码
-- https://github.com/opensourceteams/flink-example-java
+- https://github.com/opensourceteams/flink-example-java/tree/master/n_001_wordcount_local_nc
 
 ## nc 命令发送数据
 - 输入命令后处理阻塞状态，等待连通后,就可以输入数据，按回车可以发送数据
