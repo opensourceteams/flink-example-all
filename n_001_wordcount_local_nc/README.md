@@ -409,5 +409,6 @@ public class n_005_NCLocalRun_WordCount_window {
     </project>
     
 ## 引用
+
 ### window 安装nc
-- https://eternallybored.org/misc/netcat
+- https://github.com/opensourceteams/flink-example-java/blob/master/n_001_wordcount_local_nc/md/nc.md
