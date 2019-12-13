@@ -1,10 +1,18 @@
-# flink java版初体验
+# flink1.9.1 java版初体验
+
+## 简介
+- window 单机环境
+- nc 做为数据源发送数据
+- flink 流按时间间隔100毫秒统计单词
+
+## 源码
+- https://github.com/opensourceteams/flink-example-java
 
 ## nc 命令发送数据
 - 输入命令后处理阻塞状态，等待连通后,就可以输入数据，按回车可以发送数据
 
-    nc -l -p 1234
-    
+ `nc -l -p 1234`
+
 ## 输入数据
     c b a b c b
 
@@ -19,7 +27,166 @@
 
 ## 源码
 
-## pom.xml
+### 1、按行输出数据
+- 输出数据
+
+	`c b a b c b`
+
+```java
+package com.opensourceteams.bigdata.flink.example;
+
+import org.apache.flink.streaming.api.datastream.DataStream;
+import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
+
+public class n_001_NCLocalRun {
+
+
+    public static void main(String[] args) throws Exception {
+
+        final  int port = 1234 ;
+        // get the execution environment
+        final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+
+        // get input data by connecting to the socket
+        DataStream<String> text = env.socketTextStream("localhost", port, "\n");
+
+
+        text.print().setParallelism(1);
+
+        env.execute("输出nc终端数据") ;
+
+
+    }
+}
+
+```
+### 2、按行输出数据(按word拆分)
+- 输出数据
+
+
+    c
+    b
+    a
+    b
+    c
+    b
+
+```java
+package com.opensourceteams.bigdata.flink.example;
+
+import org.apache.flink.api.common.functions.FlatMapFunction;
+import org.apache.flink.streaming.api.datastream.DataStream;
+import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
+import org.apache.flink.util.Collector;
+
+public class n_002_NCLocalRun_SplitWord {
+
+    public static void main(String[] args) throws Exception {
+
+        final  int port = 1234 ;
+        // get the execution environment
+        final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+
+        // get input data by connecting to the socket
+        DataStream<String> text = env.socketTextStream("localhost", port, "\n");
+
+
+        DataStream<String> wordDataStream =  text.flatMap(new FlatMapFunction<String, String>() {
+            @Override
+            public void flatMap(String s, Collector<String> collector) throws Exception {
+                System.out.println("输入的一行数据:"+s);
+                // for(String word : s.split("\\\\s")){
+                for(String word : s.split(" ")){
+                    collector.collect(word);
+                }
+
+            }
+        })
+                ;
+
+
+        System.out.println("=========================打印的数据=========================");
+        wordDataStream.print().setParallelism(1);
+
+        env.execute("输出nc终端数据") ;
+
+
+
+    }
+}
+
+```
+
+### 3、单词统计(按word count 拆分)
+- 输出数据
+
+
+    b:3 
+    c:2 
+    a:1 
+
+```java
+package com.opensourceteams.bigdata.flink.example;
+
+import org.apache.flink.api.common.functions.FlatMapFunction;
+import org.apache.flink.api.common.functions.ReduceFunction;
+import org.apache.flink.streaming.api.datastream.DataStream;
+import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
+import org.apache.flink.streaming.api.windowing.time.Time;
+import org.apache.flink.util.Collector;
+
+public class n_005_NCLocalRun_WordCount_window {
+
+    public static void main(String[] args) throws Exception {
+
+        final  int port = 1234 ;
+        // get the execution environment
+        final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
+
+        // get input data by connecting to the socket
+        DataStream<String> text = env.socketTextStream("localhost", port, "\n");
+
+
+        DataStream<WordWithCount> wordDataStream =  text.flatMap(new FlatMapFunction<String, WordWithCount>() {
+            @Override
+            public void flatMap(String s, Collector<WordWithCount> collector) throws Exception {
+                System.out.println("输入的一行数据:"+s);
+                // for(String word : s.split("\\\\s")){
+                for(String word : s.split(" ")){
+                    //一次数据
+                    collector.collect(new WordWithCount(word,1L));
+                }
+
+            }
+        })
+                ;
+
+
+        DataStream<WordWithCount> wordCount =  wordDataStream.keyBy("word")
+                .timeWindow(Time.milliseconds(100))
+                .reduce(new ReduceFunction<WordWithCount>() {
+                    @Override
+                    public WordWithCount reduce(WordWithCount a, WordWithCount b) throws Exception {
+                        return new WordWithCount(a.getWord(),a.getCount() + b.getCount());
+                    }
+                })
+                ;
+
+
+        wordCount.print().setParallelism(1);
+
+        env.execute("输出nc终端数据") ;
+
+
+
+    }
+
+
+}
+
+```
+
+### pom.xml
     <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     	<modelVersion>4.0.0</modelVersion>
