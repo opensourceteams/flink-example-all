@@ -30,8 +30,8 @@ flink-1.9.1\bin\start-cluster.bat
 ```
 #### 查看页面仪表盘(整体运行情况)
 - http://localhost:8081
-- [![描述](地址 "描述")](https://github.com/opensourceteams/flink-example-all/blob/master/flink-example-common/n_003_local_setup_tutorial/md/image/local_setup_dashboard.png "描述")
-- [![描述](https://github.com/opensourceteams/flink-example-all/blob/master/flink-example-common/n_003_local_setup_tutorial/md/image/local_setup_dashboard.png "描述")](https://github.com/opensourceteams/flink-example-all/blob/master/flink-example-common/n_003_local_setup_tutorial/md/image/local_setup_dashboard.png "描述")
+- [![描述](地址 "描述")](https://opensourceteams.github.io/flink-example-all/flink-example-common/n_003_local_setup_tutorial/md/image/local_setup_dashboard.png "描述")
+- [![描述](https://opensourceteams.github.io/flink-example-all/flink-example-common/n_003_local_setup_tutorial/md/image/local_setup_dashboard.png "描述")](https://opensourceteams.github.io/flink-example-all/flink-example-common/n_003_local_setup_tutorial/md/image/local_setup_dashboard.png "描述")
 
 a
-![](https://github.com/opensourceteams/flink-example-all/blob/master/flink-example-common/n_003_local_setup_tutorial/md/image/local_setup_dashboard.png)
+![](https://opensourceteams.github.io/flink-example-all/flink-example-common/n_003_local_setup_tutorial/md/image/local_setup_dashboard.png)
