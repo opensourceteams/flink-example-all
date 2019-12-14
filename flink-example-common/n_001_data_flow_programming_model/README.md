@@ -7,4 +7,4 @@
 - https://github.com/opensourceteams/flink-example-all
 
 ### 图片
-- https://github.com/opensourceteams/flink-example-java/blob/master/n_002_data_flow_programming_model/md/image/Data%20flow%20programming%20model.png
+- https://github.com/opensourceteams/flink-example-all/blob/master/flink-example-common/n_001_data_flow_programming_model/md/image/Data%20flow%20programming%20model.png
