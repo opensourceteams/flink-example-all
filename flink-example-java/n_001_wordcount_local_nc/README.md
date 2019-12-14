@@ -410,7 +410,16 @@ public class n_005_NCLocalRun_WordCount_window {
     	</profiles>
     
     </project>
-    
+  
+## maven 运行
+- classpath设置flink的引用包
+- classpath:flink-1.9.1\lib\flink-dist_2.11-1.9.1.jar
+```aidl
+mvn clean package
+java -cp target\opensourceteams-0.1.jar;%CLASSPATH% com.opensourceteams.bigdata.flink.example.n_005_NCLocalRun_WordCount_window
+
+$ mvn exec:java -Dexec.mainClass=com.opensourceteams.bigdata.flink.example.n_005_NCLocalRun_WordCount_window
+```    
 ## 引用
 
 ### window 安装nc
