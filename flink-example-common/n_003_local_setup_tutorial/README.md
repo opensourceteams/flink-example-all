@@ -28,6 +28,12 @@ jscala
 - https://flink.apache.org/downloads.html
 - 下载flink-1.9.1-bin-scala_2.11.tgz
 
+#### 设置环境变量
+```
+FLINK_HOME=E:\module\bigdata\flink\flink-1.9.1
+PATH=%FLINK_HOME%\bin;%PATH%
+FLINK_CONF_DIR=%FLINK_HOME%\conf
+```
 #### 启动Flink
 ```aidl
 flink-1.9.1\bin\start-cluster.bat
@@ -36,7 +42,7 @@ flink-1.9.1\bin\start-cluster.bat
 
 #### 停止Flink
 ```aidl
-flink-1.9.1\bin\stop-cluster.bat
+flink-1.9.1\bin\stop-cluster.sh
 ```
 
 #### 查看页面仪表盘(整体运行情况)
