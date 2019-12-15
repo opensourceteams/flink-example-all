@@ -32,6 +32,13 @@ jscala
 ```aidl
 flink-1.9.1\bin\start-cluster.bat
 ```
+
+
+#### 停止Flink
+```aidl
+flink-1.9.1\bin\stop-cluster.bat
+```
+
 #### 查看页面仪表盘(整体运行情况)
 - http://localhost:8081
 - 主界面
