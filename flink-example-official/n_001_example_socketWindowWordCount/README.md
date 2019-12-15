@@ -25,4 +25,9 @@ c : 1
 a : 2
 b : 2
 ```
+- 作业提交
+[![](https://opensourceteams.github.io/flink-example-all/flink-example-official/n_001_example_socketWindowWordCount/md/image/overview.png)](https://opensourceteams.github.io/flink-example-all/flink-example-official/n_001_example_socketWindowWordCount/md/image/overview.png)
+
+- 作业拆分成任务
+[![]()](https://opensourceteams.github.io/flink-example-all//flink-example-official/n_001_example_socketWindowWordCount/md/image/overview.png)
 
