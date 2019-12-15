@@ -1,4 +1,4 @@
-# 官方示例WordCount
+# 官方示例SocketWindowWordCount
 
 ## 源码
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_001_example_socketWindowWordCount
