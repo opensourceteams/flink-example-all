@@ -29,5 +29,5 @@ b : 2
 [![](https://opensourceteams.github.io/flink-example-all/flink-example-official/n_001_example_socketWindowWordCount/md/image/overview.png)](https://opensourceteams.github.io/flink-example-all/flink-example-official/n_001_example_socketWindowWordCount/md/image/overview.png)
 
 - 作业拆分成任务
-[![](https://opensourceteams.github.io/flink-example-all//flink-example-official/n_001_example_socketWindowWordCount/md/image/job.png)]
+[![](https://opensourceteams.github.io/flink-example-all//flink-example-official/n_001_example_socketWindowWordCount/md/image/job.png)]()
 
