@@ -14,7 +14,7 @@
 #### flink1.9.1 java版初体验
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-java/n_001_wordcount_local_nc
 
-#### Flink1.9.1 官方示例SocketWindowWordCount
+#### Flink1.9.1 streaming官方示例SocketWindowWordCount
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_001_example_socketWindowWordCount
 
 ## 引用
