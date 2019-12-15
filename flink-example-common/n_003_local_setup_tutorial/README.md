@@ -2,6 +2,10 @@
 
 ## 简述
 - Flink1.9.1本地模式安装、启动、日志查看
+
+### 更多资源
+- https://github.com/opensourceteams/flink-example-all
+
 ### 安装jdk
 
 ```aidl
