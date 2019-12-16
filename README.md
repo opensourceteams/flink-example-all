@@ -1,4 +1,7 @@
 # flink1.9.1 学习笔记
+- Flink1.9.1,jdk.1.8,scala2.11
+- 开发环境：window 10
+- 微博: https://weibo.com/thinktothings
 
 ## Flink 基础
 #### Flink 数据流编程模型
@@ -11,7 +14,8 @@
 ####　Flink本地模式安装
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_003_local_setup_tutorial
 
-
+####　Flink 项目模板java版
+- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_004_maven_flink_environment
 ## Flink  Scala版
 
 
