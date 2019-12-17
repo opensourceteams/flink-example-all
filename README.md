@@ -35,12 +35,18 @@
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_009_flink_component
 
 ----------------------------------------------------------------------------------------------------------
-## Flink  Scala版
+## Flink  Scala版 (Streaming)
 #### disable OperatorChaining (禁用算子合并)
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-scala/n_001_streaming_disable_OperatorChaining
 
+#### Flink streaming api source 方式
+- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-scala/n_002_streaming_api_DataSources
+
+
+
+
 ----------------------------------------------------------------------------------------------------------
-## Flink java版
+## Flink java版  (Streaming)
 #### flink1.9.1 java版初体验(Java版)
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-java/n_001_wordcount_local_nc
 
