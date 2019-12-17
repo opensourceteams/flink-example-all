@@ -36,6 +36,8 @@
 
 ----------------------------------------------------------------------------------------------------------
 ## Flink  Scala版
+#### disable OperatorChaining (禁用算子合并)
+- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-scala/n_001_streaming_disable_OperatorChaining
 
 ----------------------------------------------------------------------------------------------------------
 ## Flink java版
