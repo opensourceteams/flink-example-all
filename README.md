@@ -60,6 +60,11 @@
 
 
 ----------------------------------------------------------------------------------------------------------
-## 引用
+## 其它
 #### window 常用命令
 - https://github.com/opensourceteams/flink-example-all/blob/master/md/window.md
+
+#### Cygwin 路径转换
+- https://github.com/opensourceteams/flink-example-all/blob/master/md/cygwin.md
+----------------------------------------------------------------------------------------------------------
+
