@@ -1,6 +1,6 @@
 # flink1.9.1 学习笔记
 - Flink1.9.1,jdk.1.8,scala2.11
-- 开发环境：window 10
+- 开发环境：window 10、Cygwin64 Terminal
 - 微博: https://weibo.com/thinktothings
 
 ## Flink 基础
