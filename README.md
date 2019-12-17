@@ -28,12 +28,18 @@
 #### flink1.9.1 java版初体验(Java版)
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-java/n_001_wordcount_local_nc
 
+
+----------------------------------------------------------------------------------------------------------
+## Flink 官网示例
 #### Flink1.9.1 streaming官方示例SocketWindowWordCount(Java版)
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_001_example_socketWindowWordCount
 
 #### Flink1.9.1 batch 官方示例 WordCount(Java版)
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_002_batch_wordcount
 
+#### batch WordCount for scala
+- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_003_batch_wordCount_scala
+----------------------------------------------------------------------------------------------------------
 ## 引用
 #### window 常用命令
 - https://github.com/opensourceteams/flink-example-all/blob/master/md/window.md
