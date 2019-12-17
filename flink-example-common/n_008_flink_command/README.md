@@ -1,7 +1,13 @@
 # Flink 命令
 
-
-
+#### Flink 启动集群
+```aidl
+start-cluster.sh
+```
+#### Flink 停止集群
+```aidl
+stop-cluster.sh
+```
 #### Flink run 提交作业
 ```aidl
 flink run -c com.opensourceteams.bigdata.flink.example.streaming.WordCountRun  ./flink-example-scala-0.1.jar
