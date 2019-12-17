@@ -7,7 +7,11 @@
 - Flink 算子会进行合并(符合条件的)
 - 合并算子(一对一　transformation、并行度相同)
 
-
+## 默认合并算子图
+[![](https://opensourceteams.github.io/flink-example-all/flink-example-scala/n_001_streaming_disable_OperatorChaining/md/image/default.png)]()
+[![](https://opensourceteams.github.io/flink-example-all/flink-example-scala/n_001_streaming_disable_OperatorChaining/md/image/disable-operatorChaining.png)](https://opensourceteams.github.io/flink-example-all/flink-example-scala/n_001_streaming_disable_OperatorChaining/md/image/disable-operatorChaining.png)
+## 禁用合并算子图
+[![](https://opensourceteams.github.io/flink-example-all/flink-example-scala/n_001_streaming_disable_OperatorChaining/md/image/disable-operatorChaining.png)]()
 ## 源码
 - 关键代码
 ```aidl
