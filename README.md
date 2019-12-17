@@ -20,6 +20,9 @@
 #### Flink 项目模板scala版
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_005_maven_project_template_for_scala
 
+
+#### window 操作系统dos 命令提交 Flink 作业
+- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_006_dos_command_submit_flink_job
 ----------------------------------------------------------------------------------------------------------
 ## Flink  Scala版
 
@@ -31,16 +34,16 @@
 
 ----------------------------------------------------------------------------------------------------------
 ## Flink 官网示例
-#### Flink1.9.1 streaming官方示例SocketWindowWordCount(Java版)
+#### flink streaming WordCount for java
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_001_example_socketWindowWordCount
 
-#### Flink1.9.1 batch 官方示例 WordCount(Java版)
+#### flink batch WordCount for java
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_002_batch_wordcount
 
-#### batch WordCount for scala
+#### flink batch WordCount for scala
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_003_batch_wordCount_scala
 
-#### streaming WordCount for scala
+#### flink streaming WordCount for scala
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_004_streaming_wordCount_scala
 
 
