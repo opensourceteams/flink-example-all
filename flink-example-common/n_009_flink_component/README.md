@@ -20,3 +20,9 @@
 - Flink为不同的环境和资源管理工具提供了不同资源管理器，比如YARN、Mesos K8s、standalone部署
 - 当JobManager申请插槽资源时，ResourceManager会将有空闲插槽的TaskManager分配给JobManager。如果ResourceManger没有足够的插槽来满足
    JobManager的请求，它还可以向资源提供平台发起会话，以提供启动TaskManager进程的容器
+
+## 分发器(Dispatcher)
+- 可以跨作业运行，它为应用提供了REST接口。
+- 当一个应用被提交执行时，分发器就会启动并将应用移交给一个JobManager
+- Dispatcher也会启动一个Web UI,用来方便地展示和监控作业执行的信息
+- Dispatcher在架构中可能并不是必需的，这取决于应用提交运行的方式
