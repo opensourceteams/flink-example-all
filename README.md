@@ -46,10 +46,10 @@
 ----------------------------------------------------------------------------------------------------------
 ## Flink 官网示例
 #### flink streaming WordCount for java
-- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_001_example_socketWindowWordCount
+- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_001_example_socketWindowWordCount_java
 
 #### flink batch WordCount for java
-- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_002_batch_wordcount
+- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_002_batch_wordcount_java
 
 #### flink batch WordCount for scala
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_003_batch_wordCount_scala
