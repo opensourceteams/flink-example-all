@@ -17,9 +17,11 @@
 #### Flink 项目模板java版
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_004_maven_project_template_for_java
 
+#### Flink 项目模板scala版
+- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_005_maven_project_template_for_scala
+
 ----------------------------------------------------------------------------------------------------------
 ## Flink  Scala版
-- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_005_maven_project_template_for_scala
 
 ----------------------------------------------------------------------------------------------------------
 ## Flink java版
