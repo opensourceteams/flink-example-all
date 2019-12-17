@@ -15,12 +15,13 @@ object WordCountRun {
     val text:DataStream[String] = env.socketTextStream(hostname,port,'\n')
 
     val windowCounts = text.flatMap{ w => w.split("\\s")}
+                        .filter(w => w.nonEmpty)
                         .map{w =>(w,1)}
       .keyBy(0)
       .timeWindow(Time.milliseconds(100))
       .sum(1)
     windowCounts.print()
 
-    env.execute("test")
+    env.execute("禁用所有的算子")
   }
 }

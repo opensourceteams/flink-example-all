@@ -13,10 +13,25 @@
 ## 禁用合并算子图
 [![](https://opensourceteams.github.io/flink-example-all/flink-example-scala/n_001_streaming_disable_OperatorChaining/md/image/disable-operatorChaining.png)]()
 
+## 算子disableChaining Filter 图
+[![](https://opensourceteams.github.io/flink-example-all/flink-example-scala/n_001_streaming_disable_OperatorChaining/md/image/disableChaining_Filter.png)]()
+
+## 算子startNewChain图
+[![](https://opensourceteams.github.io/flink-example-all/flink-example-scala/n_001_streaming_disable_OperatorChaining/md/image/startNewChain.png)]()
+
+
 ## 源码
 - 关键代码
 ```aidl
 env.disableOperatorChaining()
+```
+
+```
+ .filter(w => w.nonEmpty).disableChaining()
+```
+
+```
+.map{w =>(w,1)}.startNewChain()
 ```
 
 - WordCountRun.scala
