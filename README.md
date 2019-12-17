@@ -15,10 +15,13 @@
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_003_local_setup_tutorial
 
 ####　Flink 项目模板java版
-- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_004_maven_flink_environment
+- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_004_maven_project_template_for_java
+
+----------------------------------------------------------------------------------------------------------
 ## Flink  Scala版
+- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_005_maven_project_template_for_scala
 
-
+----------------------------------------------------------------------------------------------------------
 ## Flink java版
 #### flink1.9.1 java版初体验(Java版)
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-java/n_001_wordcount_local_nc
