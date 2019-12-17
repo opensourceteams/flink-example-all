@@ -39,6 +39,12 @@
 
 #### batch WordCount for scala
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_003_batch_wordCount_scala
+
+#### streaming WordCount for scala
+- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-official/n_004_streaming_wordCount_scala
+
+
+
 ----------------------------------------------------------------------------------------------------------
 ## 引用
 #### window 常用命令
