@@ -26,6 +26,9 @@
 #### Linux 操作系统 命令提交 Flink 作业
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_007_linux_command_submit_flink_job
 
+#### Flink 命令
+- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_008_flink_command
+
 
 
 ----------------------------------------------------------------------------------------------------------
