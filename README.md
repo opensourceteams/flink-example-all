@@ -20,9 +20,14 @@
 #### Flink 项目模板scala版
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_005_maven_project_template_for_scala
 
-
 #### window 操作系统dos 命令提交 Flink 作业
 - https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_006_dos_command_submit_flink_job
+
+#### Linux 操作系统 命令提交 Flink 作业
+- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-common/n_007_linux_command_submit_flink_job
+
+
+
 ----------------------------------------------------------------------------------------------------------
 ## Flink  Scala版
 
