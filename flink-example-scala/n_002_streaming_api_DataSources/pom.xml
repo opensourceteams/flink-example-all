@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>opensourceteams</groupId>
-	<artifactId>flink-example-scala</artifactId>
+	<artifactId>n_002_streaming_api_DataSources</artifactId>
 	<version>0.1</version>
 	<packaging>jar</packaging>
 
-	<name>Flink Quickstart Job</name>
+	<name>n_002_streaming_api_DataSources</name>
 	<url>http://www.myorganization.org</url>
 
 	<repositories>

@@ -3,11 +3,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>opensourceteams</groupId>
-	<artifactId>flink-example</artifactId>
+	<artifactId>n_001_example_streaming_socketWindowWordCount_java</artifactId>
 	<version>0.1</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
-	<name>Flink Quickstart Job</name>
+	<name>n_001_example_streaming_socketWindowWordCount_java</name>
 	<url>http://www.myorganization.org</url>
 
 	<properties>
