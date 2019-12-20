@@ -77,5 +77,8 @@
 
 #### 图片md 链接
 - https://github.com/opensourceteams/flink-example-all/blob/master/md/image.md
+
+#### scala mysql jdbc(增、删、改、查)
+- https://github.com/opensourceteams/flink-example-all/tree/master/flink-example-other/n_001_scala_mysql
 ----------------------------------------------------------------------------------------------------------
 
