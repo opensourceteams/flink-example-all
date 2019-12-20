@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>opensourceteams</groupId>
-	<artifactId>n_002_streaming_api_DataSources</artifactId>
+	<artifactId>flink-example-other</artifactId>
 	<version>0.1</version>
-	<packaging>jar</packaging>
+	<packaging>pom</packaging>
 
-	<name>n_002_streaming_api_DataSources</name>
+	<name>flink-example-other</name>
 	<url>http://www.myorganization.org</url>
 
 	<repositories>
