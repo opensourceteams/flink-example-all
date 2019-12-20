@@ -11,7 +11,7 @@ object Run3 {
   def main(args: Array[String]): Unit = {
     var preparedStatement: PreparedStatement = null
 
-    val sql:String = "insert into t_user(username) values('小明')"
+    val sql:String = "insert into t_user(username,age) values('小明',25)"
     var connection: Connection = null
       try{
         connection = MysqlJDBCUtil.getConnection()

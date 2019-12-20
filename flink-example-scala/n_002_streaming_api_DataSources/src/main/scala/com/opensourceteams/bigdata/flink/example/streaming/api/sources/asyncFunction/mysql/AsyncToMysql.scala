@@ -1,3 +1,4 @@
+/*
 package com.opensourceteams.bigdata.flink.example.streaming.api.sources.asyncFunction.mysql
 
 import java.util.concurrent.TimeUnit
@@ -28,3 +29,4 @@ object AsyncToMysql {
  abstract class MysqlAsyncFunc extends RichAsyncFunction{
   override def asyncInvoke(input: Nothing, resultFuture: ResultFuture[Nothing]): Unit = ???
 }
+*/

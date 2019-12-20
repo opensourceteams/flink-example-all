@@ -17,9 +17,12 @@ object Run1 {
       while (resultSet.next()){
         val id:Long = resultSet.getLong("id")
         val username:String = resultSet.getString("username")
+        val age:Int = resultSet.getInt("age")
         print(id)
         print("\t")
         print(username)
+        print("\t")
+        print(age)
         println()
       }
     }catch{

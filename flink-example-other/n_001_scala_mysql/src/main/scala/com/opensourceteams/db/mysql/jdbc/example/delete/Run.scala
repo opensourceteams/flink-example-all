@@ -10,7 +10,7 @@ object Run {
   def main(args: Array[String]): Unit = {
     var preparedStatement: PreparedStatement = null
 
-    val sql:String = "delete from t_user  where id = 1 "
+    val sql:String = "delete from t_user  where id = 2 "
     var connection: Connection = null
       try{
         connection = MysqlJDBCUtil.getConnection()

@@ -1,3 +1,4 @@
+/*
 package com.opensourceteams.bigdata.flink.example.streaming.api.sources.asyncFunction
 
 
@@ -24,3 +25,4 @@ class AsyncDatabaseRequest extends AsyncFunction[String,String]{
 
   }
 }
+*/
