@@ -307,3 +307,85 @@ object Run {
 }
 
 ```
+
+
+#### async Function
+- AsyncDatabaseDao
+```aidl
+package com.opensourceteams.bigdata.flink.example.streaming.api.operator.asyncFunction.n_02.dao
+
+import java.sql.ResultSet
+
+import com.alibaba.fastjson.JSONObject
+import com.opensourceteams.bigdata.flink.example.streaming.api.sources.db.mysql.util.MysqlJDBCUtil
+
+object AsyncDatabaseDao {
+
+  def getJSONObjectByKey(key:String): JSONObject = {
+    val jSONObject:JSONObject  = new JSONObject()
+    val sql = "select * from t_user where id =" +key
+    val resultSet:ResultSet =MysqlJDBCUtil.getResultSet(sql)
+    if(resultSet.next()){
+      val id:Int = resultSet.getInt("id")
+      val age:Int = resultSet.getInt("age")
+      val username:String = resultSet.getString("username")
+      jSONObject.put("id",id)
+      jSONObject.put("username",username)
+      jSONObject.put("age",age)
+    }
+    jSONObject
+  }
+}
+
+```
+
+- AsyncDatabaseRequest
+```aidl
+package com.opensourceteams.bigdata.flink.example.streaming.api.operator.asyncFunction.n_02
+
+import com.alibaba.fastjson.JSONObject
+import com.opensourceteams.bigdata.flink.example.streaming.api.operator.asyncFunction.n_02.dao.AsyncDatabaseDao
+import org.apache.flink.streaming.api.scala.async.{AsyncFunction, ResultFuture}
+
+
+class AsyncDatabaseRequest extends AsyncFunction[String,JSONObject]{
+
+
+
+
+  override def asyncInvoke(key: String, resultFuture: ResultFuture[JSONObject]): Unit = {
+
+    val jsonObject:JSONObject = AsyncDatabaseDao.getJSONObjectByKey(key)
+
+    resultFuture.complete(Iterable(jsonObject))
+    //Collections.singleton(jsonObject)
+  }
+}
+
+```
+
+
+- Run
+```aidl
+package com.opensourceteams.bigdata.flink.example.streaming.api.operator.asyncFunction.n_02
+
+import java.util.concurrent.TimeUnit
+
+import com.alibaba.fastjson.JSONObject
+import org.apache.flink.streaming.api.scala.{StreamExecutionEnvironment, _} //scala拓展API需要导入的
+
+object Run {
+
+  def main(args: Array[String]): Unit = {
+    val env:StreamExecutionEnvironment = StreamExecutionEnvironment.getExecutionEnvironment
+    val list:List[String] = List("185", "186","187","188")
+    val dataStream:DataStream[String] = env.fromCollection(list)
+
+    val resultStreamR: DataStream[JSONObject] =
+      AsyncDataStream.unorderedWait(dataStream, new AsyncDatabaseRequest(), 1000L, TimeUnit.MILLISECONDS, 100)
+    resultStreamR.print()
+    env.execute()
+  }
+}
+
+```
